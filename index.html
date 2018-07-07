@@ -4,13 +4,13 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>Feedr @ GA</title>
+      <title>Project 2 - News Feed</title>
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
       <link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
       <link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
       <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
     </head>
 
     <body>
@@ -20,25 +20,28 @@
 
         <header>
           <section class="container">
-            <a href="#"><h1>Feedr</h1></a>
+            <a href="#"><h1>News</h1></a>
             <nav>
               <ul>
-                <li><a href="#">News Source: <span>Source Name</span></a>
-                  <ul>
-                      <li><a href="#">Source 1</a></li>
-                      <li><a href="#">Source 2</a></li>
-                      <li><a href="#">Source 3</a></li>
-                  </ul>
+                <li>
+                  <!-- <a href="#">News Source: <span>Source Name</span></a> -->
+                  <select id="dropdown" name="dropdown">
+                      <option value="output1">NYT Technology Stories</option>
+                      <option value="output2">National Geographic</option>
+                      <option value="output3">Top Sports Stories</option>
+                      <!-- <li><a href="#">Source 2</a></li>
+                      <li><a href="#">Source 3</a></li> -->
+                  </select>
                 </li>
               </ul>
-              <section id="search">
+              <section id="search" >
                 <input type="text" name="name" value="">
-                <a href="#"><img src="images/search.png" alt="" /></a>
+                <a href="#" id="searchIcon"><img  src="images/search.png" alt="" /></a>
               </section>
             </nav>
             <div class="clearfix"></div>
-          </section>
         </header>
+
         <div id="popUp" class="loader hidden">
           <a href="#" class="closePopUp">X</a>
           <div class="container">
@@ -49,59 +52,14 @@
             <a href="#" class="popUpAction" target="_blank">Read more from source</a>
           </div>
         </div>
+
+        </section>
+
+
         <section id="main" class="container">
-          <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_1.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3>Test article title</h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              526
-            </section>
-            <div class="clearfix"></div>
-          </article>
-          <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_2.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3>Test article title</h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              526
-            </section>
-            <div class="clearfix"></div>
-          </article>
-          <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_2.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3>Test article title</h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              526
-            </section>
-            <div class="clearfix"></div>
-          </article>
-          <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_1.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3>Test article title</h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              526
-            </section>
-            <div class="clearfix"></div>
-          </article>
+          <div id="output1"></div>
+          <div id="output2"></div>
+          <div id="output3"></div>
         </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

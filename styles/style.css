@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:  #fff;
+  background: #fff;
 }
 
 #popUp .closePopUp {
@@ -64,11 +64,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  padding: 5px;
 }
 
 header h1 {
   color: #FFF;
-  padding: 10px 2%;
+  padding: 0px 2%;
   margin: 0;
   width: 16%;
   float: left;
@@ -103,7 +104,7 @@ header #search a {
 }
 
 header #search a:hover {
-  background: #10105f;
+  background: #555555;
 }
 
 header #search img {
@@ -128,7 +129,7 @@ header #search.active input {
 }
 
 header #search.active a {
-  background: #10105f;
+  background: #555555;
 }
 
 header nav a {
@@ -143,7 +144,7 @@ header nav a {
 
 header nav a:hover {
   background-color: #fff;
-  color: #10105f;
+  color: #555555;
 }
 
 nav ul {
@@ -154,10 +155,11 @@ nav ul {
 	position: relative;
 	}
 
-nav ul li {
+nav ul li, select option {
 	display:inline-block;
-	background-color: #10105f;
+	background-color: #555555;
   position: relative;
+  border-radius: 5px;
 }
 
 nav ul ul {
@@ -180,9 +182,21 @@ nav ul ul li {
 	position: relative;
 }
 
+select#dropdown {
+  border: 0;
+  font-size: 16px;
+  background-color: #555555;
+  color: #ffffff;
+}
+select#dropdown:focus {
+  border: none;
+  outline: none;
+}
+
+
 /* Main Section */
 #main {
-  margin-top: 65px;
+  margin-top: 80px;
 }
 
 /* Individual Article Styling */
@@ -192,19 +206,21 @@ nav ul ul li {
 }
 
 .article:hover {
-  padding: 0 2%;
+  padding: 0 1%;
   background-color: #eee;
 }
 
 .article .featuredImage {
-  width: 12%;
+  width: 60px;
+  height: 60px;
   float: left;
   margin: 1.5%;
-  max-width: 60px;
 }
 
 .article .featuredImage img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50px;
 }
 
@@ -215,6 +231,14 @@ nav ul ul li {
 
 .article .articleContent a {
   text-decoration: none;
+}
+
+.article .articleContent p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.article .articleContent p:nth-child(3) {
+  display: none;
 }
 
 .article .articleContent h3 {
@@ -230,8 +254,11 @@ nav ul ul li {
 .article .impressions {
   width: 15%;
   float: right;
-  font-size: 30px;
-  margin-top: 15px;
+  font-size: 18px;
+  margin-top: 18px;
   text-align: right;
-  color: #097FB2;
+  color: #0d0b9f;
+}
+#output1, #output2, #output3 {
+  display: block;
 }
